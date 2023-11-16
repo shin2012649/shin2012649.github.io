@@ -39,18 +39,18 @@
   </div>
 {% endif %}
 {% if site.show_os_projects %}
-  <h1 class="title">{{site.os_projects_title}}</h1>
+  <h1 class="title">{{ site.os_projects_title }}</h1>
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% assign pinned_repos = site.github.pinned_repositories | split: ", " %}
-  {% assign filtered_repos = site.github.public_repositories | where_exp:"repo", "pinned_repos contains repo.name" | sort: sort_order | reverse %}
+  {% assign github_username = 'shin2012649' %} <!-- 사용자의 GitHub 프로필 이름 -->
+  {% assign pinned_repos = site.github.pinned_repositories | where_exp:"repo", "repo.owner.login == github_username" | sort: sort_order | reverse %}
 
   <div class="projects-wrapper">
-    {% for repository in filtered_repos %}
+    {% for repository in pinned_repos %}
       <div class="project neumorphism-card" data-aos="zoom-in-down">
         <div class="name-link-wrapper">
           <h3>{{ repository.name }}</h3>
