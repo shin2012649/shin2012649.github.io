@@ -4,7 +4,7 @@ baseurl: ""
 
 # LANDING PAGE
 username: Shin Hyun Woo
-typing_text: 
+typing_text: Shin Hyun Woo's Portfolio Website
 email: shin2012649@gmail.com
 github_username: shin2012649
 Blog_username: https://2012649.tistory.com
@@ -17,28 +17,7 @@ about_me_description: "안녕하세요 엔지니어를 꿈꾸는 신현우입니
 # # SKILLS SECTION
 show_skills_card: true
 skills_title: Skills
-skills_list:
-#   - "Amazon AWS"
-#   - "Google Cloud"
-#   - "Naver Cloud"
-#   - "Apache Tomcat"
-#   - "Ubuntu"
-#   - "Linux"
-#   - "Docker"
-#   - "Jenkins"
-#   - "Nginx"
-#   - "Git"
-#   - "React"
-#   - "HTML5"
-#   - "CSS"
-#   - "JavaScript"
-#   - "Spring"
-#   - "MyBatis"
-#   - "JPA"
-#   - "Python"
-#   - "C"
-#   - "MySQL"
-#   - "Redis"
+
 
 # TIMELINE SECTION
 show_timeline_card: true
@@ -59,7 +38,7 @@ timeline_items:
 show_projects_card: true
 show_projects: true
 projects_title: Projects
-show_os_projects: true
+show_os_projects: false
 os_projects_title: Open Source Projects
 
 # CONTACT SECTION
