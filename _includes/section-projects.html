@@ -12,6 +12,11 @@
             Demo
           </a>
         {% endif %}
+        {% if project.github %}
+          <a class="highlight-link" href="{{project.github}}" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        {% endif %}
         {% if project.tags %}
           <div class="tag-wrapper">
             {% for tag in project.tags %}
@@ -23,7 +28,6 @@
     {% endfor %}
   </div>
 {% endif %}
-
 {% if site.show_os_projects %}
   <h1 class="title">{{site.os_projects_title}}</h1>
   {% if site.projects.sort_by == 'stars' %}
@@ -42,9 +46,11 @@
     {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
 
+  {% assign pinned_repos = site.github.pinned_repositories | split: ", " %}
+
   <div class="projects-wrapper">
     {% for repository in filtered_repos %}
-      {% unless site.projects.exclude.projects contains repository.name %}
+      {% if pinned_repos contains repository.name %}
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <div class="name-link-wrapper">
             <h3>{{ repository.name }}</h3>
@@ -56,12 +62,12 @@
                     </path>
                   </svg>{{ repository.stargazers_count }}
                 </a>
-                {% endif %}
-                {% if repository.forks_count != 0 %}
+              {% endif %}
+              {% if repository.forks_count != 0 %}
                 <a href="{{ repository.html_url }}/network/members" class="project-stars-forks">
                   <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
                     <path fill-rule="evenodd"
-                      d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z">
+                      d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.20-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.20.55 1.20 1.20 0 .65-.55 1.20-1.20 1.20C1.35 4.20.80 3.65.80 3 0 2.35.55 1.80 1.20 1.80zm0 12.41c-.66 0-1.20-.55-1.20-1.20 0-.65.55-1.20 1.20-1.20.65 0 1.20.55 1.20 1.20 0 .65-.55 1.20-1.20 1.20zm6-8c-.66 0-1.20-.55-1.20-1.20 0-.65.55-1.20 1.20-1.20.65 0 1.20.55 1.20 1.20 0 .65-.55 1.20-1.20 1.20z">
                     </path>
                   </svg>{{ repository.forks_count }}
                 </a>
@@ -75,7 +81,7 @@
             </a>
           {% endif %}
           <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
-            Github
+            GitHub
           </a>
           {% if repository.topics %}
             <div class="tag-wrapper">
@@ -85,7 +91,7 @@
             </div>
           {% endif %}
         </div>
-      {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 {% endif %}
