@@ -13,21 +13,64 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+- name: bleuauction
+  descr: "수산물 오픈마켓 플랫폼<br>
+          수산물의 자세한 정보를 제공하고 소비자의 합리적인 소비 선택을 위한 플랫폼"
+  github: https://github.com/NC7-BleuAuction
+  demo: https://youtu.be/Xh1zr1ubKk8?si=JuOrfFOg9YmWMiCb
   tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
+    - tag: Java
+    - tag: Docker
+    - tag: Nginx
+    - tag: Springboot
+    - tag: Jenkins
+    - tag: MySQL
+    - tag: JPA
+    - tag: React
+    - tag: HTML
+    - tag: CSS
+    - tag: Axios
+    - tag: JavaScript
+    - tag: IntelliJ IDE
+    - tag: VSCode
+    - tag: Spring-boot
+    - tag: Thymeleaf
+    - tag: Gson
+    - tag: Lombok
+    - tag: MyBatis
+    - tag: Spring-security
 
-- name: project Y
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+  roles:
+    - role: "NCP 인프라 구축 및 관리"
+    - role: "아키텍처 설계"
+    - role: "배포용 서버 VPC 구성 및 관리"
+    - role: "NCP 인프라 구축 (DB서버, 도메인, DNS 등)"
+    - role: "CI/CD 구축 및 관리"
+    - role: "도커 + 젠킨스 CI/CD 파이프라인 활용한 배포 자동화"
+    - role: "Nginx 활용한 로드밸런싱 환경 구축"
+    - role: "챗봇 구현 (Naver Clova ChatBot 이용한 챗봇 구현 및 디자인)"
+    - role: "ERD 제작"
+
+- name: ArtTab
+  descr: "미술품 경매 사이트에 대한 수요가 커지고 있는 상황에서 실제 경매사이트의 기능들을 접목하여 웹사이트 구현"
+  github: https://github.com/NC7-ArtTab
+  demo: https://youtu.be/UNEy5w2aTy0?si=smSyF5MZmb2A5Uq8
   tags:
-    - tag: Python
-    - tag: Django
+    - tag: Java
+    - tag: Naver Cloud Platform Server
+    - tag: IntelliJ IDE
+    - tag: Spring-boot
+    - tag: Thymeleaf
+    - tag: Gson
+    - tag: MySQL
+    - tag: Lombok
+    - tag: MyBatis
+    - tag: Spring-security
 
-- name: project Z
-  descr: "You can also set a project without demo link and no tags"
+  roles:
+    - role: "개발환경 구축"
+    - role: "git 관리"
+    - role: "소셜로그인/로그인/회원가입"
+    - role: "ERD"
+    - role: "Naver Cloud DB"
+

@@ -1,0 +1,41 @@
+# > name: Name of your framework
+# > weight: Describes how good you know the framework - values from 1 up to 5
+#
+# Example of a framework
+# - name: Framework
+#   weight: 5
+
+
+# Cloud Platforms
+- name: Amazon AWS
+  weight: 2
+- name: Google Cloud
+  weight: 3
+- name: Naver Cloud
+  weight: 3
+
+# Server & Hosting
+- name: Apache Tomcat
+  weight: 3
+- name: Nginx
+  weight: 3
+- name: Ubuntu
+  weight: 3
+- name: Linux
+  weight: 3
+
+# CI/CD & Deployment
+- name: Docker
+  weight: 3
+- name: Jenkins
+  weight: 4
+
+# Version Control
+- name: Git
+  weight: 3
+
+# Databases
+- name: MySQL
+  weight: 3
+- name: Redis
+  weight: 3

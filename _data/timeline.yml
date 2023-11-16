@@ -17,45 +17,67 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
-  tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+- title: "네이버 클라우드 캠프"
+  title-url: "#"
+  date: 2023.04 - 2023.10
+  subtitle: "참가"
   timeline-side: right
-
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
+    - tag: Cloud Computing
+    - tag: Infrastructure
+    - tag: Cloud Literacy
+    - tag: Networking
+    - tag: Database
+    - tag: Cloud OS
+    - tag: Containers
+    - tag: Cloud Deployment
+    - tag: Automation
+    - tag: Web Programming
+    - tag: Mobile Programming
+    - tag: AI Programming
+    - tag: Python
+    - tag: ML Model Development
+    - tag: AIaaS
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+  curriculum:
+    - section: "클라우드 인프라의 이해"
+      topics:
+        - topic: "클라우드 리터러시"
+        - topic: "네트워크 기초"
+        - topic: "데이터베이스 이해"
+        - topic: "클라우드 환경 OS"
+        - topic: "컨테이너"
+        - topic: "클라우드 배포 및 자동화"
+
+    - section: "클라우드 기반 웹/모바일 프로그래밍"
+      topics:
+        - topic: "웹 프로그래밍 기초 DB, SQL 활용"
+        - topic: "웹 프로그래밍 응용"
+        - topic: "웹 프로그래밍 심화"
+
+    - section: "인공지능과 AIaaS 프로그래밍"
+      topics:
+        - topic: "파이썬 프로그래밍"
+        - topic: "클라우드 AIaaS"
+        - topic: "ML 모델 개발"
+        - topic: "클라우드 기반 모델 생성 및 배포"
+
+
+- title: "브로콜리 픽쳐스"
+  title-url: "#"
+  date: 2022-2023
+  subtitle: "영화 제작팀 근무"
   timeline-side: left
 
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
-  tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+- title: "국방부 7사단 수색중대"
+  title-url: "#"
+  date: 2020-2022
+  subtitle: "중위 전역"
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: "동국대학교"
+  title-url: "#"
+  date: 2016-2020
+  subtitle: "국제통상학과 졸업"
   timeline-side: left
+
