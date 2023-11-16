@@ -40,24 +40,19 @@
 {% endif %}
 {% if site.show_os_projects %}
   <h1 class="title">{{ site.os_projects_title }}</h1>
+
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% capture pinned_repos %}
-    {% for repo in site.github.public_repositories %}
-      {% if repo.is_user_repository and repo.is_pinned %}
-        {{ repo.name }}{% unless forloop.last %},{% endunless %}
-      {% endif %}
-    {% endfor %}
-  {% endcapture %}
-
-  {% assign filtered_repos = site.github.public_repositories | where_exp: 'repo', 'pinned_repos contains repo.name' | sort: sort_order | reverse %}
+  {% assign username = 'shin2012649' %}
+  {% assign starred_repos_url = "https://api.github.com/users/" | append: username | append: "/starred" %}
+  {% assign starred_repos = site.github.data.stargazers[starred_repos_url] %}
 
   <div class="projects-wrapper">
-    {% for repository in filtered_repos %}
+    {% for repository in starred_repos %}
       {% unless site.projects.exclude.projects contains repository.name %}
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <div class="name-link-wrapper">
@@ -70,13 +65,6 @@
                   </svg>{{ repository.stargazers_count }}
                 </a>
               {% endif %}
-              {% if repository.forks_count != 0 %}
-                <a href="{{ repository.html_url }}/network/members" class="project-stars-forks">
-                  <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
-                  </svg>{{ repository.forks_count }}
-                </a>
-              {% endif %}
             </div>
           </div>
           <p class="project-desc">{{ repository.description }}</p>
@@ -86,7 +74,7 @@
             </a>
           {% endif %}
           <a class="highlight-link" href="{{ repository.html_url }}" target="_blank" rel="noreferrer">
-            Github
+            GitHub
           </a>
           {% if repository.topics %}
             <div class="tag-wrapper">
