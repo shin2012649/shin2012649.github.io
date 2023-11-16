@@ -11,34 +11,34 @@ Blog_username: https://2012649.tistory.com
 
 # ABOUT ME SECTION
 show_aboutme_card: true
-about_me_title: DevOps Engineer
-about_me_description: "I aspire to be a DevOps Engineer with a passion for continuous improvement and efficiency. My journey includes experiences in AWS, Google Cloud, Naver Cloud, Apache Tomcat, Ubuntu, Linux, Docker, Jenkins, Nginx, Git, React, HTML5, CSS, JavaScript, Spring, MyBatis, JPA, Python, C, MySQL, and Redis."
+about_me_title: 
+about_me_description: "안녕하세요 엔지니어를 꿈꾸는 신현우입니다"
 
-# SKILLS SECTION
-show_skills_card: true
-skills_title: Skills
-skills_list:
-  - "Amazon AWS"
-  - "Google Cloud"
-  - "Naver Cloud"
-  - "Apache Tomcat"
-  - "Ubuntu"
-  - "Linux"
-  - "Docker"
-  - "Jenkins"
-  - "Nginx"
-  - "Git"
-  - "React"
-  - "HTML5"
-  - "CSS"
-  - "JavaScript"
-  - "Spring"
-  - "MyBatis"
-  - "JPA"
-  - "Python"
-  - "C"
-  - "MySQL"
-  - "Redis"
+# # SKILLS SECTION
+# show_skills_card: true
+# skills_title: Skills
+# skills_list:
+#   - "Amazon AWS"
+#   - "Google Cloud"
+#   - "Naver Cloud"
+#   - "Apache Tomcat"
+#   - "Ubuntu"
+#   - "Linux"
+#   - "Docker"
+#   - "Jenkins"
+#   - "Nginx"
+#   - "Git"
+#   - "React"
+#   - "HTML5"
+#   - "CSS"
+#   - "JavaScript"
+#   - "Spring"
+#   - "MyBatis"
+#   - "JPA"
+#   - "Python"
+#   - "C"
+#   - "MySQL"
+#   - "Redis"
 
 # TIMELINE SECTION
 show_timeline_card: true
