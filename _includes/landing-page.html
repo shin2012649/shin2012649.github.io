@@ -5,7 +5,7 @@
     </h1>
     <h1>
       <span id="txt-rotate" data-period="2000"
-        data-rotate='["{{site.typing_text}}", "scroll down for more."]'
+        data-rotate='["{{site.typing_text}}", "scroll down for more"]'
       >
       </span>
     </h1>
@@ -25,7 +25,7 @@
       {% endif %}
 
       {% if site.github_username != null %}
-        <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer"
+        <a class="social-link" aria-label="My GitHub" target="_blank" rel="github"
           href="https://github.com/{{site.github_username}}"
         >
           <svg viewBox="0 0 200 200" class="circle">
@@ -40,7 +40,23 @@
         </a>
       {% endif %}
 
-      {% if site.codepen_username != null %}
+      {% if site.blog_username != null %}
+        <a class="social-link" aria-label="My Blog" target="_blank" rel="blog"
+          href="https://velog.io/@{{site.blog_username}}"
+        >
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#blogger" | prepend: site.baseurl }}"></use>
+            </svg>
+          </div>
+          <span class="label">Blog</span>
+        </a>
+      {% endif %}
+
+      <!-- {% if site.codepen_username != null %}
         <a class="social-link" aria-label="My Codepen" target="_blank" rel="noreferrer"
           href="https://codepen.io/{{site.codepen_username}}"
         >
@@ -54,9 +70,9 @@
           </div>
           <span class="label">CodePen</span>
         </a>
-      {% endif %}
+      {% endif %} -->
 
-      {% if site.dev_username != null %}
+      <!-- {% if site.dev_username != null %}
         <a class="social-link" aria-label="My DEV" target="_blank" rel="noreferrer"
           href="https://dev.to/{{site.dev_username}}"
         >
@@ -70,9 +86,9 @@
           </div>
           <span class="label">DEV</span>
         </a>
-      {% endif %}
+      {% endif %} -->
 
-      {% if site.linkedin_username != null %}
+      <!-- {% if site.linkedin_username != null %}
         <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank"
           rel="noreferrer" href="https://www.linkedin.com/in/{{site.linkedin_username}}"
         >
@@ -86,9 +102,9 @@
           </div>
           <span class="label">LinkedIn</span>
         </a>
-      {% endif %}
+      {% endif %} -->
 
-      {% if site.twitter_username != null %}
+      <!-- {% if site.twitter_username != null %}
         <a class="social-link twitter" aria-label="My Twitter" target="_blank"
           rel="noreferrer" href="https://twitter.com/{{site.twitter_username}}"
         >
@@ -102,7 +118,7 @@
           </div>
           <span class="label">Twitter</span>
         </a>
-      {% endif %}
+      {% endif %} -->
     </div>
   </div>
 </div>
