@@ -74,3 +74,16 @@
     - role: "ERD"
     - role: "Naver Cloud DB"
 
+- name: WOOCHAPEDIA
+  descr: "개인 프로젝트 - SpringBoot로 구현하는 영화 리뷰 사이트"
+  github: https://github.com/shin2012649/WOOCHAPEDIA
+
+- name: Brazilian-Medical-NoShow
+  descr: "Brazilian Medical NoShow 프로젝트"
+  github: https://github.com/NC7-AI-Team-C/Brazilian-Medical-NoShow
+
+- name: private_algorithm
+  descr: "혼자하는 알고리즘 공부"
+  github: https://github.com/shin2012649/private_algorithm
+
+
