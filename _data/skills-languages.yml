@@ -8,10 +8,13 @@
 # Programming Languages
 - name: Java
   weight: 3
+
 - name: JavaScript
   weight: 3
+
 - name: Python
   weight: 2
+  
 - name: C
   weight: 3
 

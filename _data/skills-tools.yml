@@ -7,11 +7,15 @@
 
 - name: Git
   weight: 3
+
 - name: Bash
   weight: 2
+
 - name: VS Code
   weight: 3
+
 - name: Postman
   weight: 3
+  
 - name: Vim
   weight: 3
