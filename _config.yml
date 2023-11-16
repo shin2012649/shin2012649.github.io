@@ -4,7 +4,7 @@ baseurl: ""
 
 # LANDING PAGE
 username: Shin Hyun Woo
-typing_text: DevOps Engineer
+typing_text: 
 email: shin2012649@gmail.com
 github_username: shin2012649
 Blog_username: https://2012649.tistory.com
@@ -12,12 +12,12 @@ Blog_username: https://2012649.tistory.com
 # ABOUT ME SECTION
 show_aboutme_card: true
 about_me_title: 
-about_me_description: "안녕하세요 엔지니어를 꿈꾸는 신현우입니다"
+about_me_description: "안녕하세요 엔지니어를 꿈꾸는 신현우입니다."
 
 # # SKILLS SECTION
-# show_skills_card: true
-# skills_title: Skills
-# skills_list:
+show_skills_card: true
+skills_title: Skills
+skills_list:
 #   - "Amazon AWS"
 #   - "Google Cloud"
 #   - "Naver Cloud"
