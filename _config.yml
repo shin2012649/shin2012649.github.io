@@ -4,11 +4,11 @@ description: shin2012649's Portfolio Website
 baseurl: ""
 
 # LANDING PAGE
-username: shin2012649
+username: 신현우
 typing_text: Shin Hyun Woo's Portfolio Website
 email: shin2012649@gmail.com
 github_username: shin2012649
-Blog_username: https://2012649.tistory.com
+blog_username: 201649
 
 # ABOUT ME SECTION
 show_aboutme_card: true
