@@ -1,9 +1,10 @@
 # GENERAL SITE SETTINGS
-title: shin2012649 portfolio
+title: shin2012649
+description: shin2012649's Portfolio Website
 baseurl: ""
 
 # LANDING PAGE
-username: Shin Hyun Woo
+username: shin2012649
 typing_text: Shin Hyun Woo's Portfolio Website
 email: shin2012649@gmail.com
 github_username: shin2012649
@@ -11,7 +12,7 @@ Blog_username: https://2012649.tistory.com
 
 # ABOUT ME SECTION
 show_aboutme_card: true
-about_me_title: 
+about_me_title: About Me
 about_me_description: "안녕하세요 엔지니어를 꿈꾸는 신현우입니다."
 
 # # SKILLS SECTION
@@ -23,16 +24,6 @@ skills_title: Skills
 show_timeline_card: true
 timeline_title: Education & Experience
 cv_download_link: https://example.com/
-timeline_items:
-  - date: "2023.04 - 2023.10"
-    title: "Naver Cloud Camp"
-    description: "Completed the Naver Cloud Camp, gaining hands-on experience with cloud technologies."
-  - date: "2022.06 - 2022.12"
-    title: "Broccoli Pictures"
-    description: "Worked in the film production team, contributing to various aspects of movie-making."
-  - date: "2020.03 - 2022.06"
-    title: "Republic of Korea Army"
-    description: "Served as a Platoon Leader in the 7th Division Search Battalion, achieving valuable leadership and teamwork skills."
 
 # PROJECTS SECTION
 show_projects_card: true
